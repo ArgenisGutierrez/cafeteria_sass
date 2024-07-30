@@ -1,3 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use "sass:math";
+
 .navegacion {
-  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  gap: math.div(v.$separacion, 5);
+
+  @include m.tablet {
+    flex-direction: row;
+    align-items: unset;
+    margin-top: 0;
+  }
+}
+
+.navegacion__link {
+  margin-top: 1rem;
+  color: v.$blanco;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @include m.tablet {
+    margin-top: 0;
+  }
+
+  &:hover {
+    color: v.$secundario;
+  }
+}
+
+.navegacion__link--activo {
+  color: v.$secundario;
 }

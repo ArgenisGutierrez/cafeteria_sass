@@ -8,13 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Argenis Gutierrez Ortiz",
+  "reporsitory": "git@github.com:ArgenisGutierrez/cafeteria_sass.git",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "gulp": "^5.0.0",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^9.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^5.1.0",
     "postcss": "^8.4.40",
-    "sass": "^1.77.8"
+    "sass": "^1.77.8",
+    "sharp": "^0.33.4"
   }
 }

@@ -1,5 +1,10 @@
 @use 'variables' as v;
 
+@font-face {
+  font-family: v.$fuente_principal;
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
