@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: v.$fuente_principal;
-  src: url(../../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 html {
@@ -17,13 +17,15 @@ html {
 }
 
 body {
-  font-family: v.$fuente_principal;
+  font-family: v.$fuente_secundaria;
   font-size: 1.6rem;
+  background-color: v.$cafeClaro;
 }
 
 p {
   color: v.$negro;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 a {
@@ -39,6 +41,9 @@ h1,
 h2,
 h3 {
   margin: 0 0 v.$separacion 0;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
 }
 
 h1 {

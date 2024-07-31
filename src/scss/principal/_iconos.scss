@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.principal__iconos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5rem;
+
+  @include m.tablet {
+    flex-direction: row;
+  }
+}
+
+.principal__icono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+  p {
+    font-family: v.$fuente_cursiva;
+    font-weight: 400;
+    font-size: 3rem;
+    color: v.$primario;
+  }
+}

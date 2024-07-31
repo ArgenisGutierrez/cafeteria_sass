@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.principal__contenedor {
+  background-color: v.$blanco;
+  padding: 5rem 2rem;
+
+  @include m.tablet {
+    padding: calc(v.$separacion * 2);
+    margin-top: -10rem;
+    position: relative;
+  }
+}
+
+.principal__titulo {
+  color: v.$primario;
+
+  span {
+    color: v.$secundario;
+    font-size: 1.8rem;
+    display: block;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    background-image: url(../img/cafe.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10rem;
+  }
+}
