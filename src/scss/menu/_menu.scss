@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.menu {
+  background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to right, v.$primario, v.$primario);
+  background-repeat: no-repeat;
+  background-position: center 5rem, center 92%, 100%;
+  background-size: 200%;
+  padding: 15rem 0 20rem 0;
+
+  @include m.tablet {
+    background-size: 100%;
+  }
+
+  @include m.desktop {
+    background-size: 60%, 60%, 100%;
+    padding: 15rem 5rem 20rem 5rem;
+  }
+
+  @include m.desktopXL {
+    background-size: 40%, 40%, 100%;
+  }
+}
+
+.menu__titulo {
+  color: v.$blanco;
+  position: relative;
+
+  span {
+    display: block;
+    font-size: 1rem;
+  }
+}
