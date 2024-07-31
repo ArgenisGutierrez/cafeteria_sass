@@ -24,10 +24,15 @@
 
 .menu__titulo {
   color: v.$blanco;
-  position: relative;
 
   span {
     display: block;
     font-size: 1rem;
+  }
+
+  @include m.desktopXL {
+    span {
+      font-size: 1.8rem;
+    }
   }
 }

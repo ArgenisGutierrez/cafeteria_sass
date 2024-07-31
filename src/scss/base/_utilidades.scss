@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 .text-center {
   text-align: center;
@@ -12,4 +13,8 @@
   width: 95%;
   max-width: 120rem;
   margin: 0 auto;
+
+  @include m.desktopXL {
+    max-width: 160rem;
+  }
 }

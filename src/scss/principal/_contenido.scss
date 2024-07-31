@@ -33,3 +33,18 @@
     background-size: 10rem;
   }
 }
+
+.principal__contenido {
+
+  @include m.tablet {
+    font-size: 2rem;
+  }
+
+  @include m.desktop {
+    font-size: 2.2rem;
+  }
+
+  @include m.desktopXL {
+    font-size: 2.4rem;
+  }
+}

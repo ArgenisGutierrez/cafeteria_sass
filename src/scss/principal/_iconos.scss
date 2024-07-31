@@ -10,6 +10,10 @@
   @include m.tablet {
     flex-direction: row;
   }
+
+  @include m.desktopXL {
+  justify-content: space-around;
+  }
 }
 
 .principal__icono {
