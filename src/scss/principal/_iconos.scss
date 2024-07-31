@@ -11,8 +11,8 @@
     flex-direction: row;
   }
 
-  @include m.desktopXL {
-  justify-content: space-around;
+  @include m.desktop {
+    justify-content: space-around;
   }
 }
 

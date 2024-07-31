@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimoniales__contenedor {
+  background-color: v.$blanco;
+  margin-top: -10rem;
+  padding: 5rem 2rem;
+
+  @include m.tablet {
+    padding: 10rem;
+  }
+}
+
+.testimoniales__testimonial {
+  background-color: v.$cafeClaro;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+
+  @include m.tablet {
+    width: 80%;
+  }
+
+  @include m.desktop {
+    width: 50%;
+  }
+}
+
+.testimoniales__contenido {
+  text-align: justify;
+  font-family: v.$fuente_cursiva;
+  font-size: 2rem;
+  color: v.$primario;
+}
+
+.testimoniales__autor {
+  text-align: right;
+  color: v.$secundario;
+  font-size: 2.5rem;
+  font-family: v.$fuente_cursiva;
+}
