@@ -9,14 +9,22 @@ import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 
 //Minificar Imagenes
-import imagemin, { optipng } from "gulp-imagemin";
+// import imagemin, { optipng } from "gulp-imagemin";
 // import gulpAvif from 'gulp-avif';
-import gulpAvif from 'gulp-avif';
+// import gulpAvif from 'gulp-avif';
+
+//Sourcemaps
+// import * as mapSources from "gulp-sourcemaps";
+
+// cssnano
+import cssnanoPlugin from "cssnano";
 
 export function css(done) {
   src('src/scss/app.scss')
+    // .pipe(mapSources.init())
     .pipe(sassCompiler({ outputStyle: 'compressed' }))
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer(), cssnanoPlugin()]))
+    // .pipe(mapSources.write('.'))
     .pipe(dest('build/css'))
   done();
 }
