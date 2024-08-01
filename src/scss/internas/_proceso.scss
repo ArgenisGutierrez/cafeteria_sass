@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.procesos__item {
+  @include m.desktop {
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.procesos__imagen {
+  padding: 0 2rem;
+  flex: 1;
+}
+
+.procesos__contenido {
+  padding: 0 2rem;
+  flex: 1;
+}
+
+.procesos__titulo {
+  text-align: left;
+  color: v.$primario;
+  margin: 2rem 0;
+
+  span {
+    text-decoration: underline v.$secundario;
+  }
+}
